@@ -4,13 +4,13 @@
 
 //Вариант от преподавателя:
 
-string NumSec (int num)
+string NumSec(int num)
 {
-if ((-1000< num && num>-100) || (num <1000 && num >100))
-    return $"{num/10 % 10}";
-    return "The numder is not three-dirit !";
+      if ((-1000 < num && num > -100) || (num < 1000 && num > 100))
+            return $"{num / 10 % 10}";
+      return "The numder is not three-dirit !";
 }
-Console.WriteLine (NumSec (  int.Parse (Console.ReadLine())));   
+Console.WriteLine(NumSec(int.Parse(Console.ReadLine())));
 
 /*
 
