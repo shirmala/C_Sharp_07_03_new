@@ -1,12 +1,17 @@
-﻿//Задача 3_0  Напишите программу, которая принимает на вход
-//трёхзначное число и на выходе показывает вторую цифру этого числа.
+﻿// Задача 3_0.
+//Напишите программу, которая нра вход принимает координаты
+//точки (X и Y), причем X!= 0 и Y!= 0, и выдает номер четверти
+// плоскости, в которой находится  эта точка
 
-string  NumSec (int num)
+void Quarters(int X, int Y)
 {
-if( (-1000<num && num < -100) || (num < 1000 && num > 100) )
-return $"{num /10 % 10}";
-return "The nuber is not three-digit!";
-
+      if (X == 0 || Y == 0)
+            Console.WriteLine("Четверть не определена");
+      else if (X > 0 && Y > 0) Console.WriteLine("1-ая четверть");
+      else if (X < 0 && Y > 0) Console.WriteLine("2-ая четверть");
+      else if (X < 0 && Y < 0) Console.WriteLine("3-ая четверть");
+      else if (X > 0 && Y < 0) Console.WriteLine("4-ая четверть");
 }
-Console.WriteLine (NumSec (int.Parse(Console.ReadLine())));
-
+int num_1 = int.Parse(Console.ReadLine()!);
+int num_2 = int.Parse(Console.ReadLine()!);
+Quarters(num_1, num_2);
