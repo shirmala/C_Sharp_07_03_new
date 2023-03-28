@@ -32,3 +32,4 @@ int[] mass = MassNums(num, start, stop);
 Print(mass);
 RevMass(mass);
 Print(mass);
+
