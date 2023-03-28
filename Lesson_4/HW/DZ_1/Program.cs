@@ -21,7 +21,7 @@ Console.WriteLine("Enter degree of number:  ");
 int num_2 = int.Parse(Console.ReadLine()!);
 
 Console.WriteLine(PowNum(num_1, num_2));
-/*
+
 //Вариант_1: со счетчиком для  целого положительного h:
 int StepNum(int a, int b)
 {
@@ -53,5 +53,5 @@ Console.WriteLine(StepenjNum(2, -2));
 Console.WriteLine(StepenjNum(2, 2));
 Console.WriteLine(StepenjNum(2, 0));
 Console.WriteLine();
-*/
+
 
